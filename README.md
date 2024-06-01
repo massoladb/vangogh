@@ -1,1 +1,3 @@
 # Mural Digital Vincent van Gogh
+
+Este repositório é um mural digital sobre Van Gogh e a relação de suas obras com a psicologia das cores. O site foi feito utilizando Javascript, HTML, CSS e fazendo o uso do framework TailwindCss. O projeto é o PIM da equipe composta por Andressa Souza, Luan de Souza, Mariana Amparo, Mariana Macedo e Nauana Neres do curso de Design Gráfico da Universidade Paulista (UNIP).
