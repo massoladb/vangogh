@@ -332,6 +332,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         style = window.getComputedStyle(contentImage);
         fullPath = style.backgroundImage;
+
+        console.log(fullPath);
         path = fullPath.substring(31, fullPath.length - 2);
         
         overlayImage.src = path;
