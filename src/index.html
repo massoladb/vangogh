@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="custom.css">
+    <title>Mural digital - Vincent van Gogh</title>
+</head>
+<body class="bg-[#f8f8ff]">
+    <nav class="flex justify-center items-center w-full min-h-20 p-6 lg:mb-12">
+        <div class="flex justify-center gap-5 flex-col lg:flex-row lg:justify-between items-center w-11/12 lg:w-4/5 h-full">
+            <img class="h-8" src="assets/img/unip-logo.png">
+            <h2 class="text-center text-zinc-900 text-3xl">Mural digital <span class="text-[#343865] font-black">Vincent</span> van <span class="text-[#ce9d02] font-black">Gogh</span></h2>
+            <div></div>
+        </div>
+    </nav>
+
+    <header class="flex justify-center items-center w-full h-fit pl-4 pr-4">
+        <div class="flex justify-center items-center flex-col-reverse lg:flex-row w-full sm:w-4/5 h-fit lg:h-[600px] bg-white rounded-xl p-8 gap-12 shadow-lg border transition-all" id="contents-container">
+            <div class="h-72 lg:h-full w-full lg:w-1/3 rounded-lg bg-cover bg-no-repeat bg-center cursor-pointer hover:scale-[1.01] transition-all" id="contents-image"></div>
+
+            <div class="flex justify-start items-center h-full w-full lg:w-2/3 flex-col gap-12">
+                <div class="flex justify-center items-center w-full">
+                    <h1 class="text-center text-4xl text-zinc-900 transition-all" id="contents-title">História do Van Gogh</h1>
+                </div>
+                <div class="flex justify-center max-h-96 lg:h-full lg:max-h-none w-full overflow-y-scroll transition-all" id="contents-body-container">
+                    <p class="text-justify text-zinc-800 transition-all" id="contents-body">
+                        Vincent Willem van Gogh, nasceu em 30 de março de 1853 em um pequeno vilarejo no sul da Holanda, chamado de Brabante de Zundert. Seus pais eram Theodorus e Anna Carbentus van Gogh.<br>Com apenas dezesseis anos, em 1869, é mandado pelo pai para trabalhar com seu tio em Haia, cidade da Holanda, para a ajudar na inauguração de uma filial da Casa Goupil, galeria francesa que comerciava livros e obras artística, que o demitiu pelo excesso de conflitos sete anos após sua admissão.<br>Influenciado pelo pai, Van Gogh tenta carreira na área religiosa e paralelamente candidata-se para professor de francês e alemão em uma escola na Inglaterra, porém em ambas as profissões não obtêm êxito. Entre empregos e demissões, sem perspectiva de uma carreira promissora, Vincent passa por seus primeiros episódios depressivos e inúmeras crises nervosas e solitárias, encontrando abrigo na bebida e em sua amizade com seu irmão.<br>Após deixar a carreira de religiosidade de lado, assa a trabalhar como minerador uma pequena região da Bélgica, mas também acaba sendo demitido em 1879. Durante todas suas viagens e profissões, Vincent escrevia cartas para seu irmão – e melhor amigo – Theo, contando sobre seus dias acompanhado de ilustrações, ao ver os esboços, o irmão oferece apoio financeiro para que pudesse começar seus primeiros quadros.<br>Com o financiamento do irmão, começa a estudar os fundamentos da arte, como anatomia e uso da perspectiva, a usar aquarela e tinta a óleo, é nesse mesmo período que Vincent pinta um de seus primeiros quadros “Os comedores de batata”, marcando sua fase de profissionalização nas artes e uso de técnicas de outros pintores. Em 1886, o artista mudou-se para Paris novamente, onde teve contato com outros pintores e com o movimento impressionista, marcando a transição das cores apagadas e escuras para cores puras e brilhantes que Gogh começou a usar em seus trabalhos.<br>Depois do episódio do corte da orelha devido uma briga com seu colega Paul Gauguin, Vincent se interna em um hospital psiquiátrico Saint-Remy-de-Provence, localizado na França, onde produz uma de suas obras mais conhecidas, a famosa “Noite Estrelada”, que era a vista da janela do seu quarto ao anoitecer.<br>Após um ano de seu tratamento, Vincent viaja para um campo de trigo e morre com um tiro no peito, morrendo dois dias após o disparo, em 29 de julho de 1890, com trinta e sete anos, é enterrado no cemitério de Auvers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="flex flex-col justify-center items-center w-full pl-4 pr-4 pt-12 pb-24 gap-24">
+        <div class="flex justify-around items-center w-4/5 flex-wrap gap-12" id="cards-container">
+            <!-- Elements are added here via js -->
+        </div>
+
+        <div class="flex items-center w-4/5 flex-wrap gap-6" id="colors-container">
+            <!-- Elements are added here via js -->
+        </div>
+    </main>
+
+    <div class="justify-center items-center transition-all hidden" id="overlay">
+        <div class="transition-all hover:scale-[1.1]" id="close-button">
+            <div class="close-bar" id="close-bar-left"></div>
+            <div class="close-bar" id="close-bar-right"></div>
+        </div>
+
+        <img class="w-4/5 sm:h-3/4 sm:w-auto shadow-2xl" alt="imagem" id="overlay-image"></img>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
